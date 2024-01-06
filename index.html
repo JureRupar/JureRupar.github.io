@@ -57,13 +57,13 @@ body, html {
 <body>
 
 <!-- Navbar (sit on top) -->
-<div class="w3-top">
+<div class="w3-top" style="z-index:10">
   <div class="w3-bar" id="myNavbar">
     <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </a>
     <a href="#home" class="w3-bar-item w3-button">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><img src="slike/nike.ico" width="24" height="25" style="opacity: 0.6"> ABOUT</a>
     <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PRODUCTS</a>
     <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
@@ -103,7 +103,7 @@ body, html {
 		gtx.drawImage(img, 10, 10);
 	</script>
 </canvas>
-    <canvas id="myCanvas" width="1200" height="1200" style="position: absolute; left: 0; top: 0; z-index: 100; padding: 12px;"></canvas>
+    <canvas id="myCanvas" width="1200" height="1200" style="position: absolute; left: 0; top: 0; z-index: 1; padding: 12px;"></canvas>
 	<script>
 		var canvas2 = document.getElementById('myCanvas');
 		var ctx = canvas2.getContext('2d');
