@@ -90,11 +90,11 @@ body, html {
 
 <!-- Container (About Section) -->
 <div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center">OUR GOAL</h3>
-  <p class="w3-center"><em>BRING INSPIRATION AND INNOVATION TO EVERY ATHLETE IN THE WORLD</em></p>
+  <h2 class="w3-center">OUR GOAL</h2>
+  <p class="w3-center"><em>Bring inspiration and innovation to every athlete in the world</em></p>
   <p>We have created:</p><div style="position: relative;">
   <img id="nike" src="slike/nikeNow.png" style="opacity: 0">
- <canvas id="layer1" width="1200" height="1200" style="position: absolute; left: 0; top: 0; z-index: 0;">
+ <canvas id="layer1" width="1200" height="1200" style="position: absolute; left: -15%; top: -5%; z-index: 0; scale:0.7;">
 
 	<script>
 		const canvas = document.getElementById("layer1");
@@ -103,11 +103,12 @@ body, html {
 		gtx.drawImage(img, 10, 10);
 	</script>
 </canvas>
-    <canvas id="myCanvas" width="1200" height="1200" style="position: absolute; left: 0; top: 0; z-index: 1; padding: 12px;"></canvas>
+    <canvas id="myCanvas" width="1200" height="1200" style="position: absolute; left: -15.5%; top: -15.7%; z-index: 1; padding: 12px; scale:0.7;"></canvas>
 	<script>
 		var canvas2 = document.getElementById('myCanvas');
 		var ctx = canvas2.getContext('2d');
-
+		
+		ctx.globalAlpha = 0.4;
 		ctx.beginPath();
 		ctx.moveTo(692.50, 559.75);
 		ctx.bezierCurveTo(654.36, 575.82, 599.79, 602.80, 604.00, 663.64);
@@ -117,7 +118,7 @@ body, html {
 		ctx.bezierCurveTo(1054.22, 592.65, 766.75, 645.38, 771.38, 644.62);
 		ctx.bezierCurveTo(714.88, 654.75, 668.75, 635.12, 692.53, 560.42);
 		ctx.strokeStyle = '#000';
-		ctx.lineWidth = 2;
+		ctx.lineWidth = 0.1;
 		ctx.closePath();
 		ctx.fillStyle = "#fffff";
 		ctx.fill();
@@ -130,17 +131,10 @@ body, html {
       <p>Our purpose is to move the world forward through the power of sport. Worldwide, we’re leveling the playing field, doing our part to protect our collective playground, and expanding access to sport for everyone. </p>
     </div>
   </div>
-  
-<!-- Second Parallax Image with Portfolio Text -->
-<div class="bgimg-2 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
-  </div>
-</div>
 
 <!-- Container (Portfolio Section) -->
 <div class="w3-content w3-container w3-padding-64" id="portfolio">
-  <h3 class="w3-center">OUR PRODUCTS</h3>
+  <h2 class="w3-center">OUR PRODUCTS</h2>
   <p class="w3-center"><em>Here are just some of our latest shoes.<br> Click on the images to make them bigger</em></p><br>
 
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
@@ -189,17 +183,10 @@ body, html {
   </div>
 </div>
 
-<!-- Third Parallax Image with Portfolio Text -->
-<div class="bgimg-3 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle">
-     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
-  </div>
-</div>
-
 <!-- Container (Contact Section) -->
 <div class="w3-content w3-container w3-padding-64" id="contact">
-  <h3 class="w3-center">OUR HEADQUARTERS</h3>
-  <p class="w3-center"><em>I'd love your feedback!</em></p>
+  <h2 class="w3-center">OUR HEADQUARTERS</h2>
+  <p class="w3-center"><em>Give us some feedback!</em></p>
 
   <div class="w3-row w3-padding-32 w3-section">
     <div class="w3-col m4 w3-container">
