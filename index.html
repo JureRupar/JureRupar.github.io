@@ -266,7 +266,7 @@ document.getElementById("mojObrazec").addEventListener("submit", function(event)
 					title: 'Warning',
 					text: 'Please fill all the fields!',
 					icon: 'error',
-					confirmButtonColor: 'rgba(39,68,146,255)',
+					confirmButtonColor: 'rgba(97, 97, 97, 0.8)',
 					confirmButtonText: 'V redu'
 				});
 				event.preventDefault();
@@ -276,10 +276,9 @@ document.getElementById("mojObrazec").addEventListener("submit", function(event)
 					title: 'Success',
 					text: 'The message was sent!',
 					icon: 'success',
-					confirmButtonColor: 'rgba(39,68,146,255)',
+          iconColor: 'rgba(97, 97, 97, 0.8)',
+					confirmButtonColor: 'rgba(97, 97, 97, 0.8)',
 					confirmButtonText: 'V redu'
-					}).then(function () {
-					window.location.href = "index.html";
 					})
 					event.preventDefault();
 				}
